@@ -249,7 +249,7 @@
 
 
             try {
-                const url = 'http://localhost:3000/api/tareas';
+                const url = '/api/tareas';
                 const respuesta = await fetch(url, {
                     method: 'POST',
                     body: datos
@@ -295,7 +295,7 @@
         datos.append('proyectoId', ObtenerProyecto());
 
         try {
-            const url = 'http://localhost:3000/api/tareas/actualizar';
+            const url = '/api/tareas/actualizar';
 
             const respuesta = await fetch(url, {
                 method: 'POST',
@@ -354,7 +354,7 @@
             datos.append('proyectoId', ObtenerProyecto());
 
             try{
-            const url = 'http://localhost:3000/api/tareas/eliminar';
+            const url = '/api/tareas/eliminar';
             const respuesta = await fetch(url, {
                 method: 'POST',
                 body: datos
@@ -372,7 +372,7 @@
             }
 
             } catch(error) {
-
+                console.log(error);
             }
         }
 
