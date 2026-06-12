@@ -278,7 +278,7 @@
                     console.log(tareas);
                 }
 
-            } catch  {
+            } catch (error) {
                 console.log(error);
             }
 
